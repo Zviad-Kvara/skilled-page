@@ -1,0 +1,366 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(180deg, #FFFFFF 0%, #F0F1FF 100%);
+    font-family: 'Plus Jakarta Sans';
+    overflow-x: hidden;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px;
+}
+
+h2 {
+    font-weight: 800;
+    font-size: 28px;
+    line-height: 35px;
+    color: #13183F;
+}
+
+.header-button {
+    font-family: 'Plus Jakarta Sans';
+    background: #13183F;
+    border-radius: 28px;
+    height: 48px;
+    width: 140px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 28px;
+    color: #FFFFFF;
+    border: none;
+}
+
+main {
+    padding: 16px;
+    width: 375px;
+    margin: auto;
+}
+
+.budget-container {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+h1 {
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 50px;
+    color: #13183F;
+}
+
+.budget-paragraph {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    color: #83869A;
+}
+
+.budget-button {
+    background: linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
+    border-radius: 31.5px;
+    height: 56px;
+    width: 167px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 26px;
+    color: #FFFFFF;
+    border: none;
+}
+
+.hero-mobile-img {
+    margin-top: 61px;
+    width: 327px;
+}
+
+.card-container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.card-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
+    border-radius: 10px;
+    height: 120px;
+    width: 343px;
+    margin-bottom: 40px;
+}
+
+h3 {
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 32px;
+    color: #FFFFFF;
+    padding: 28px;
+}
+
+.card {
+    background: #FFFFFF;
+    box-shadow: 0px 25px 50px rgba(6, 22, 141, 0.0442381);
+    border-radius: 10px;
+    padding: 0px 28px 32px 28px;
+    height: 259px;
+    width: 343px;
+}
+
+.icon {
+    width: 56px;
+    height: 56px;
+    margin-top: -24px;
+}
+
+h4 {
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 25px;
+    color: #13183F;
+    margin-top: 24px;
+}
+
+p {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    color: #83869A;
+    margin-top: 16px;
+}
+
+.main-button {
+    font-family: 'Plus Jakarta Sans';
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 28px;
+    color: #F74780;
+    border: none;
+    margin-top: 24px;
+    background-color: transparent;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 80px;
+    height: 120px;
+    background: #13183F;
+    padding: 16px;
+}
+
+h5 {
+    font-weight: 800;
+    font-size: 28px;
+    line-height: 35px;
+    color: #FFFFFF;
+}
+
+.footer-button {
+    background: linear-gradient(180deg, #4851FF 0%, #F02AA6 100%);
+    border-radius: 28px;
+    height: 48px;
+    width: 140px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 28px;
+    color: #FFFFFF;
+    border: none;
+}
+
+br {
+    display: none;
+}
+
+
+/* Tablet Version */
+
+@media screen and (min-width:768px) {
+    body {
+        background-image: url("./images/image-hero-tablet.png");
+        background-position-x: calc(100% + 300px);
+        background-repeat: no-repeat;
+        background-position-y: -25px;
+    }
+    header {
+        padding: 24px 40px 50px 39px;
+    }
+    br {
+        display: block;
+    }
+    main {
+        width: 768px;
+        padding: 0;
+    }
+    .budget-container {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        padding: 99px 11px 0 39px;
+    }
+    .hero-mobile-img {
+        display: none;
+    }
+    .card-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 11px;
+        position: relative;
+        margin-top: 200px;
+        justify-content: center;
+    }
+    .card-header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 259px;
+        width: 339px;
+        margin-bottom: 32px;
+    }
+    h3 {
+        padding: 56px 21px 139px 32px;
+    }
+    .card {
+        padding: 0px 21px 32px 32px;
+        width: 339px;
+        margin-bottom: 32px;
+    }
+    footer {
+        margin-top: 86px;
+        width: 100%;
+        padding: 38px;
+    }
+}
+
+
+/* fukin Desktop version */
+
+@media screen and (min-width:1440px) {
+    body {
+        background-image: url("./images/image-hero-desktop.png");
+        background-position-x: calc(100% + 400px);
+        background-position-y: -180px;
+    }
+    header {
+        display: flex;
+        justify-content: space-between;
+        padding: 0;
+    }
+    h2 {
+        font-weight: 800;
+        font-size: 36px;
+        line-height: 45px;
+        margin-top: 29px;
+        margin-left: 165px;
+    }
+    .header-button {
+        height: 56px;
+        width: 167px;
+        font-weight: 700;
+        font-size: 18px;
+        margin-top: 24px;
+        margin-right: 165px;
+    }
+    .header-button:hover {
+        background: #666CA3;
+        cursor: pointer;
+    }
+    main {
+        padding: 165px;
+        width: 100%;
+        margin: auto;
+    }
+    .budget-container {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+        padding: 0;
+    }
+    h1 {
+        font-weight: 800;
+        font-size: 56px;
+        line-height: 71px;
+    }
+    .budget-paragraph {
+        font-size: 18px;
+        line-height: 28px;
+        margin-top: 29px;
+    }
+    .budget-button {
+        height: 63px;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 28px;
+        margin-top: 40px;
+    }
+    .budget-button:hover {
+        background: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
+        cursor: pointer;
+    }
+    .card-container {
+        gap: 30px;
+    }
+    .card-header {
+        border-radius: 15px;
+        height: 322px;
+        width: 350px;
+        margin-bottom: 56px;
+    }
+    h3 {
+        font-size: 32px;
+        line-height: 40px;
+        padding: 64px 32px 138px 32px;
+    }
+    .card {
+        border-radius: 15px;
+        padding: 0px 32px 40px 32px;
+        height: 322px;
+        width: 350px;
+    }
+    h4 {
+        font-size: 24px;
+        line-height: 30px;
+        color: #13183F;
+        margin-top: 32px;
+    }
+    p {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 28px;
+        margin-top: 24px;
+    }
+    .main-button {
+        margin-top: 30px;
+    }
+    .main-button:hover {
+        color: #FFA7C3;
+        cursor: pointer;
+    }
+    footer {
+        margin-top: 100px;
+        padding: 0;
+    }
+    h5 {
+        font-size: 36px;
+        line-height: 45px;
+        margin: 37px 0 38px 165px;
+    }
+    .footer-button {
+        background: linear-gradient(180deg, #4851FF -54.32%, #F02AA6 100%);
+        height: 56px;
+        width: 167px;
+        font-size: 18px;
+        margin: 32px 165px 32px 0;
+    }
+    .footer-button:hover {
+        background: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), linear-gradient(180deg, #4851FF -54.32%, #F02AA6 100%);
+        cursor: pointer;
+    }
+}
