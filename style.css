@@ -40,6 +40,7 @@ main {
     padding: 16px;
     width: 375px;
     margin: auto;
+    transition: 0.5s all;
 }
 
 .budget-container {
